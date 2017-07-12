@@ -1,5 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
+import CommentList from './containers/CommentList'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<CommentList />, document.getElementById('root'))

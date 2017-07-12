@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import CommentList from '../components/CommentList'
 
-class App extends Component {
-  constructor() {
-    super()
+class CommentListContainer extends Component {
+  constructor(props) {
+    super(props)
     this.state = {
       comments: [],
     }
@@ -15,15 +16,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        {
-          this.state.comments.map(comment => (
-            <div>{comment.body}</div>
-          ))
-        }
-      </div>
+      <CommentList comments={this.state.comments} />
     )
   }
 }
 
-export default App
+export default CommentListContainer
