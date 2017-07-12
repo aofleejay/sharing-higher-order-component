@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Loading from './Loading'
+import withLoading from '../hocs/withLoading'
 
-const CommentList = (props) => (
-  props.comments.length === 0 ?
-    <Loading />
-  :
-    <ul>
-      {
-        props.comments.map(comment => (
-          <li key={comment.body}>{comment.body}</li>
-        ))
-      }
-    </ul>
-)
+class CommentList extends Component {
+  render() {
+    return (
+      <ul>
+        {
+          this.props.comments.map(comment => <li key={comment.body}>{comment.body}</li>)
+        }
+      </ul>
+    )
+  }
+}
 
-export default CommentList
+export default withLoading(CommentList)
