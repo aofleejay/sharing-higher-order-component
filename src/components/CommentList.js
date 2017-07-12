@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import withLoading from '../hocs/withLoading'
 
 class CommentList extends Component {
   render() {
@@ -12,4 +13,4 @@ class CommentList extends Component {
   }
 }
 
-export default CommentList
+export default withLoading(CommentList)
