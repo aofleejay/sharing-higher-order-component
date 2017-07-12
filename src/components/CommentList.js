@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Loading from './Loading'
 import withLoading from '../hocs/withLoading'
 
 class CommentList extends Component {
