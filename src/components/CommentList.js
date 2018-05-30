@@ -6,7 +6,7 @@ class CommentList extends Component {
     return (
       <ul>
         {
-          this.props.comments.map(comment => <li key={comment.body}>{comment.body}</li>)
+          this.props.comments.map(({ id, body }) => <li key={id}>{body}</li>)
         }
       </ul>
     )
