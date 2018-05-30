@@ -1,11 +1,12 @@
-# Higher-order component workshop #
+# Higher order component workshop #
+Reusing loading logic via higer order component
 
-### to start project ###
+## Getting started ##
 
 `npm install` or `yarn`
 
 `npm start` or `yarn start`
 
-Webserver start at [http://localhost:8081](http://localhost:8081)
-
-Api start at [http://localhost:3000/comments](http://localhost:3000/comments)
+## Workshop ##
+- [Starter code](https://github.com/aofleejay/sharing-higher-order-component/tree/checkpoint/cp0-starter)
+- [Finished code](https://github.com/aofleejay/sharing-higher-order-component/tree/checkpoint/cp1-create-loading-hoc)
