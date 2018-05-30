@@ -1,11 +1,15 @@
 import React, { Component } from 'react'
+import Loading from './Loading'
 
 class CommentList extends Component {
   render() {
+    const { isLoading, comments } = this.props
+
+    if (isLoading) return <Loading />
     return (
       <ul>
         {
-          this.props.comments.map(comment => <li key={comment.body}>{comment.body}</li>)
+          comments.map(({ id, body }) => <li key={id}>{body}</li>)
         }
       </ul>
     )
