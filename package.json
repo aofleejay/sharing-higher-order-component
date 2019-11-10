@@ -13,7 +13,7 @@
     "url": "git+https://github.com/aofleejay/higher-order-component-workshop.git"
   },
   "keywords": ["higher-order component", "hoc"],
-  "author": "Kunapot Pairat",
+  "author": "aofleejay",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aofleejay/higher-order-component-workshop/issues"
